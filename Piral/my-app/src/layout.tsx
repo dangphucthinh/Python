@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { ComponentsState, ErrorComponentsState, Menu, Notifications, SwitchErrorInfo, MenuItemProps } from 'piral';
 import { Link } from 'react-router-dom';
+import { DashboardContainer } from './DashboardContainer';
 
 const MenuItem: React.FC<MenuItemProps> = ({ children }) => <li className="nav-item">{children}</li>;
 
@@ -72,16 +73,7 @@ export const layout: Partial<ComponentsState> = {
       <SwitchErrorInfo {...props} />
     </div>
   ),
-  DashboardContainer: ({ children }) => (
-    <div>
-      <h1>Hello, world!</h1>
-      <p>Welcome to your new microfrontend app shell, built with:</p>
-      <div className="tiles">
-        {defaultTiles}
-        {children}
-      </div>
-    </div>
-  ),
+  DashboardContainer,
   DashboardTile: ({ columns, rows, children }) => <div className={`tile cols-${columns} rows-${rows}`}>{children}</div>,
   Layout: ({ children }) => (
     <div>

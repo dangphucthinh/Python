@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "bfcc9a2c9525bcd07dbf";
+/******/ 	var hotCurrentHash = "ca27a3ae59f09a6e92e7";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -19775,7 +19775,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default.a);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "html {\n  font-size: 14px;\n}\n@media (min-width: 768px) {\n  html {\n    font-size: 16px;\n  }\n}\n\n.nav-link {\n  padding: 0;\n}\n\n.nav-item a {\n  padding: 0 0.5rem;\n}\n\na.navbar-brand {\n  white-space: normal;\n  text-align: center;\n  word-break: break-all;\n}\n\n.box-shadow {\n  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);\n}\n\n.error {\n  color: red;\n  font-weight: bold;\n}\n\n.tiles {\n  flex: 1;\n  position: relative;\n  display: grid;\n  grid-template-columns: repeat(auto-fit, 70px);\n  grid-template-rows: repeat(auto-fit, 70px);\n  grid-gap: 10px;\n  overflow: visible;\n}\n.tiles .tile {\n  display: flex;\n  position: relative;\n}\n.tiles .tile.cols-1 {\n  grid-column: span 1;\n  width: 70px;\n}\n.tiles .tile.rows-1 {\n  grid-row: span 1;\n  height: 70px;\n}\n.tiles .tile.cols-2 {\n  grid-column: span 2;\n  width: 150px;\n}\n.tiles .tile.rows-2 {\n  grid-row: span 2;\n  height: 150px;\n}\n.tiles .tile.cols-3 {\n  grid-column: span 3;\n  width: 230px;\n}\n.tiles .tile.rows-3 {\n  grid-row: span 3;\n  height: 230px;\n}\n.tiles .tile.cols-4 {\n  grid-column: span 4;\n  width: 310px;\n}\n.tiles .tile.rows-4 {\n  grid-row: span 4;\n  height: 310px;\n}\n.tiles .tile.cols-5 {\n  grid-column: span 5;\n  width: 390px;\n}\n.tiles .tile.rows-5 {\n  grid-row: span 5;\n  height: 390px;\n}\n.tiles .tile.cols-6 {\n  grid-column: span 6;\n  width: 470px;\n}\n.tiles .tile.rows-6 {\n  grid-row: span 6;\n  height: 470px;\n}\n.tiles .tile.cols-7 {\n  grid-column: span 7;\n  width: 550px;\n}\n.tiles .tile.rows-7 {\n  grid-row: span 7;\n  height: 550px;\n}\n.tiles .tile.cols-8 {\n  grid-column: span 8;\n  width: 630px;\n}\n.tiles .tile.rows-8 {\n  grid-row: span 8;\n  height: 630px;\n}\n.tiles .tile:hover {\n  outline: rgba(29, 29, 29, 0.1) solid 4px;\n}\n.tiles .tile .teaser {\n  font-size: 1.2em;\n  padding: 1em;\n  background: #f8f9fa;\n}\n\n.notifications {\n  position: fixed;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  right: 2em;\n  bottom: 2em;\n}\n\n.notification-toast {\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  text-align: left;\n  padding: 0.8em;\n  background-color: #fff;\n  max-width: 500px;\n  position: relative;\n  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);\n}\n.notification-toast + .notification-toast {\n  margin-top: 1em;\n}\n.notification-toast.success:before {\n  background-color: #2BDE3F;\n}\n.notification-toast.error:before {\n  background-color: #e7431a;\n}\n.notification-toast.info:before {\n  background-color: #1D72F3;\n}\n.notification-toast.warning:before {\n  background-color: #FFC007;\n}\n.notification-toast:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 2px;\n}\n.notification-toast .notification-toast-details {\n  flex: 1;\n}\n.notification-toast .notification-toast-details .notification-toast-title {\n  color: #3e3e3e;\n  font-weight: 700;\n  margin-top: 0;\n  margin-bottom: 8px;\n}\n.notification-toast .notification-toast-details .notification-toast-description {\n  font-size: 14px;\n  margin-top: 0;\n  margin-bottom: 0;\n  color: #878787;\n}\n.notification-toast .notification-toast-close {\n  width: 14px;\n  cursor: pointer;\n  height: 14px;\n  fill: #878787;\n  margin-left: 1.2em;\n  background: url('data:image/svg+xml;utf8,<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 15.642 15.642\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" enable-background=\"new 0 0 15.642 15.642\"><path fill-rule=\"evenodd\" d=\"M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z\"></path></svg>') no-repeat center center;\n}", "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AAAA;EACE,eAAA;AACF;AACE;EAHF;IAII,eAAA;EAEF;AACF;;AACA;EACE,UAAA;AAEF;;AACA;EACE,iBAAA;AAEF;;AACA;EACE,mBAAA;EACA,kBAAA;EACA,qBAAA;AAEF;;AACA;EACE,iDAAA;AAEF;;AACA;EACE,UAAA;EACA,iBAAA;AAEF;;AAKA;EACE,OAAA;EACA,kBAAA;EACA,aAAA;EACA,6CAAA;EACA,0CAAA;EACA,cAAA;EACA,iBAAA;AAFF;AAIE;EACE,aAAA;EACA,kBAAA;AAFJ;AAKM;EACE,mBAAA;EACA,WAAA;AAHR;AAMM;EACE,gBAAA;EACA,YAAA;AAJR;AAHM;EACE,mBAAA;EACA,YAAA;AAKR;AAFM;EACE,gBAAA;EACA,aAAA;AAIR;AAXM;EACE,mBAAA;EACA,YAAA;AAaR;AAVM;EACE,gBAAA;EACA,aAAA;AAYR;AAnBM;EACE,mBAAA;EACA,YAAA;AAqBR;AAlBM;EACE,gBAAA;EACA,aAAA;AAoBR;AA3BM;EACE,mBAAA;EACA,YAAA;AA6BR;AA1BM;EACE,gBAAA;EACA,aAAA;AA4BR;AAnCM;EACE,mBAAA;EACA,YAAA;AAqCR;AAlCM;EACE,gBAAA;EACA,aAAA;AAoCR;AA3CM;EACE,mBAAA;EACA,YAAA;AA6CR;AA1CM;EACE,gBAAA;EACA,aAAA;AA4CR;AAnDM;EACE,mBAAA;EACA,YAAA;AAqDR;AAlDM;EACE,gBAAA;EACA,aAAA;AAoDR;AAhDI;EACE,wCAAA;AAkDN;AA/CI;EACE,gBAAA;EACA,YAAA;EACA,mBAAA;AAiDN;;AA5CA;EACE,eAAA;EACA,aAAA;EACA,qBAAA;EACA,sBAAA;EACA,UAAA;EACA,WAAA;AA+CF;;AA5CA;EACE,sBAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,cAAA;EACA,sBAAA;EACA,gBAAA;EACA,kBAAA;EACA,gDAAA;AA+CF;AA7CE;EACE,eAAA;AA+CJ;AA5CE;EACE,yBAAA;AA8CJ;AA3CE;EACE,yBAAA;AA6CJ;AA1CE;EACE,yBAAA;AA4CJ;AAzCE;EACE,yBAAA;AA2CJ;AAxCE;EACE,WAAA;EACA,kBAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,WAAA;AA0CJ;AAvCE;EACE,OAAA;AAyCJ;AAvCI;EACE,cAAA;EACA,gBAAA;EACA,aAAA;EACA,kBAAA;AAyCN;AAtCI;EACE,eAAA;EACA,aAAA;EACA,gBAAA;EACA,cAAA;AAwCN;AApCE;EACE,WAAA;EACA,eAAA;EACA,YAAA;EACA,aAAA;EACA,kBAAA;EACA,gsBAAA;AAsCJ","sourcesContent":["html {\n  font-size: 14px;\n\n  @media (min-width: 768px) {\n    font-size: 16px;\n  }\n}\n\n.nav-link {\n  padding: 0;\n}\n\n.nav-item a {\n  padding: 0 .5rem;\n}\n\na.navbar-brand {\n  white-space: normal;\n  text-align: center;\n  word-break: break-all;\n}\n\n.box-shadow {\n  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);\n}\n\n.error {\n  color: red;\n  font-weight: bold;\n}\n\n$tile-height: 70px;\n$tile-width: 70px;\n$tile-gap: 10px;\n\n.tiles {\n  flex: 1;\n  position: relative;\n  display: grid;\n  grid-template-columns: repeat(auto-fit, 70px);\n  grid-template-rows: repeat(auto-fit, 70px);\n  grid-gap: 10px;\n  overflow: visible;\n\n  .tile {\n    display: flex;\n    position: relative;\n\n    @for $i from 1 through 8 {\n      &.cols-#{$i} {\n        grid-column: span $i;\n        width: $i * $tile-width + ($i - 1) * $tile-gap;\n      }\n\n      &.rows-#{$i} {\n        grid-row: span $i;\n        height: $i * $tile-width + ($i - 1) * $tile-gap;\n      }\n    }\n\n    &:hover {\n      outline: rgba(29, 29, 29, 0.1) solid 4px;\n    }\n\n    .teaser {\n      font-size: 1.2em;\n      padding: 1em;\n      background: #f8f9fa;\n    }\n  }\n}\n\n.notifications {\n  position: fixed;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  right: 2em;\n  bottom: 2em;\n}\n\n.notification-toast {\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  text-align: left;\n  padding: 0.8em;\n  background-color: #fff;\n  max-width: 500px;\n  position: relative;\n  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.2);\n\n  &+& {\n    margin-top: 1em;\n  }\n\n  &.success:before {\n    background-color: #2BDE3F;\n  }\n\n  &.error:before {\n    background-color: #e7431a;\n  }\n\n  &.info:before {\n    background-color: #1D72F3;\n  }\n\n  &.warning:before {\n    background-color: #FFC007;\n  }\n\n  &:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 2px;\n  }\n\n  .notification-toast-details {\n    flex: 1;\n\n    .notification-toast-title {\n      color: #3e3e3e;\n      font-weight: 700;\n      margin-top: 0;\n      margin-bottom: 8px;\n    }\n\n    .notification-toast-description {\n      font-size: 14px;\n      margin-top: 0;\n      margin-bottom: 0;\n      color: #878787;\n    }\n  }\n\n  .notification-toast-close {\n    width: 14px;\n    cursor: pointer;\n    height: 14px;\n    fill: #878787;\n    margin-left: 1.2em;\n    background: url('data:image/svg+xml;utf8,<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 15.642 15.642\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" enable-background=\"new 0 0 15.642 15.642\"><path fill-rule=\"evenodd\" d=\"M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z\"></path></svg>') no-repeat center center;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "html {\n  font-size: 14px;\n}\n@media (min-width: 768px) {\n  html {\n    font-size: 16px;\n  }\n}\n\n.nav-link {\n  padding: 0;\n}\n\n.nav-item a {\n  padding: 0 0.5rem;\n}\n\na.navbar-brand {\n  white-space: normal;\n  text-align: center;\n  word-break: break-all;\n}\n\n.box-shadow {\n  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);\n}\n\n.error {\n  color: red;\n  font-weight: bold;\n}\n\n.my-pilet {\n  color: red;\n}\n\n.tiles {\n  flex: 1;\n  position: relative;\n  display: grid;\n  grid-template-columns: repeat(auto-fit, 70px);\n  grid-template-rows: repeat(auto-fit, 70px);\n  grid-gap: 10px;\n  overflow: visible;\n}\n.tiles .tile {\n  display: flex;\n  position: relative;\n}\n.tiles .tile.cols-1 {\n  grid-column: span 1;\n  width: 70px;\n}\n.tiles .tile.rows-1 {\n  grid-row: span 1;\n  height: 70px;\n}\n.tiles .tile.cols-2 {\n  grid-column: span 2;\n  width: 150px;\n}\n.tiles .tile.rows-2 {\n  grid-row: span 2;\n  height: 150px;\n}\n.tiles .tile.cols-3 {\n  grid-column: span 3;\n  width: 230px;\n}\n.tiles .tile.rows-3 {\n  grid-row: span 3;\n  height: 230px;\n}\n.tiles .tile.cols-4 {\n  grid-column: span 4;\n  width: 310px;\n}\n.tiles .tile.rows-4 {\n  grid-row: span 4;\n  height: 310px;\n}\n.tiles .tile.cols-5 {\n  grid-column: span 5;\n  width: 390px;\n}\n.tiles .tile.rows-5 {\n  grid-row: span 5;\n  height: 390px;\n}\n.tiles .tile.cols-6 {\n  grid-column: span 6;\n  width: 470px;\n}\n.tiles .tile.rows-6 {\n  grid-row: span 6;\n  height: 470px;\n}\n.tiles .tile.cols-7 {\n  grid-column: span 7;\n  width: 550px;\n}\n.tiles .tile.rows-7 {\n  grid-row: span 7;\n  height: 550px;\n}\n.tiles .tile.cols-8 {\n  grid-column: span 8;\n  width: 630px;\n}\n.tiles .tile.rows-8 {\n  grid-row: span 8;\n  height: 630px;\n}\n.tiles .tile:hover {\n  outline: rgba(29, 29, 29, 0.1) solid 4px;\n}\n.tiles .tile .teaser {\n  font-size: 1.2em;\n  padding: 1em;\n  background: #f8f9fa;\n}\n\n.notifications {\n  position: fixed;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  right: 2em;\n  bottom: 2em;\n}\n\n.notification-toast {\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  text-align: left;\n  padding: 0.8em;\n  background-color: #fff;\n  max-width: 500px;\n  position: relative;\n  box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.2);\n}\n.notification-toast + .notification-toast {\n  margin-top: 1em;\n}\n.notification-toast.success:before {\n  background-color: #2BDE3F;\n}\n.notification-toast.error:before {\n  background-color: #e7431a;\n}\n.notification-toast.info:before {\n  background-color: #1D72F3;\n}\n.notification-toast.warning:before {\n  background-color: #FFC007;\n}\n.notification-toast:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 2px;\n}\n.notification-toast .notification-toast-details {\n  flex: 1;\n}\n.notification-toast .notification-toast-details .notification-toast-title {\n  color: #3e3e3e;\n  font-weight: 700;\n  margin-top: 0;\n  margin-bottom: 8px;\n}\n.notification-toast .notification-toast-details .notification-toast-description {\n  font-size: 14px;\n  margin-top: 0;\n  margin-bottom: 0;\n  color: #878787;\n}\n.notification-toast .notification-toast-close {\n  width: 14px;\n  cursor: pointer;\n  height: 14px;\n  fill: #878787;\n  margin-left: 1.2em;\n  background: url('data:image/svg+xml;utf8,<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 15.642 15.642\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" enable-background=\"new 0 0 15.642 15.642\"><path fill-rule=\"evenodd\" d=\"M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z\"></path></svg>') no-repeat center center;\n}", "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AAAA;EACE,eAAA;AACF;AACE;EAHF;IAII,eAAA;EAEF;AACF;;AACA;EACE,UAAA;AAEF;;AACA;EACE,iBAAA;AAEF;;AACA;EACE,mBAAA;EACA,kBAAA;EACA,qBAAA;AAEF;;AACA;EACE,iDAAA;AAEF;;AACA;EACE,UAAA;EACA,iBAAA;AAEF;;AACA;EACE,UAAA;AAEF;;AAKA;EACE,OAAA;EACA,kBAAA;EACA,aAAA;EACA,6CAAA;EACA,0CAAA;EACA,cAAA;EACA,iBAAA;AAFF;AAIE;EACE,aAAA;EACA,kBAAA;AAFJ;AAKM;EACE,mBAAA;EACA,WAAA;AAHR;AAMM;EACE,gBAAA;EACA,YAAA;AAJR;AAHM;EACE,mBAAA;EACA,YAAA;AAKR;AAFM;EACE,gBAAA;EACA,aAAA;AAIR;AAXM;EACE,mBAAA;EACA,YAAA;AAaR;AAVM;EACE,gBAAA;EACA,aAAA;AAYR;AAnBM;EACE,mBAAA;EACA,YAAA;AAqBR;AAlBM;EACE,gBAAA;EACA,aAAA;AAoBR;AA3BM;EACE,mBAAA;EACA,YAAA;AA6BR;AA1BM;EACE,gBAAA;EACA,aAAA;AA4BR;AAnCM;EACE,mBAAA;EACA,YAAA;AAqCR;AAlCM;EACE,gBAAA;EACA,aAAA;AAoCR;AA3CM;EACE,mBAAA;EACA,YAAA;AA6CR;AA1CM;EACE,gBAAA;EACA,aAAA;AA4CR;AAnDM;EACE,mBAAA;EACA,YAAA;AAqDR;AAlDM;EACE,gBAAA;EACA,aAAA;AAoDR;AAhDI;EACE,wCAAA;AAkDN;AA/CI;EACE,gBAAA;EACA,YAAA;EACA,mBAAA;AAiDN;;AA5CA;EACE,eAAA;EACA,aAAA;EACA,qBAAA;EACA,sBAAA;EACA,UAAA;EACA,WAAA;AA+CF;;AA5CA;EACE,sBAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,cAAA;EACA,sBAAA;EACA,gBAAA;EACA,kBAAA;EACA,gDAAA;AA+CF;AA7CE;EACE,eAAA;AA+CJ;AA5CE;EACE,yBAAA;AA8CJ;AA3CE;EACE,yBAAA;AA6CJ;AA1CE;EACE,yBAAA;AA4CJ;AAzCE;EACE,yBAAA;AA2CJ;AAxCE;EACE,WAAA;EACA,kBAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,WAAA;AA0CJ;AAvCE;EACE,OAAA;AAyCJ;AAvCI;EACE,cAAA;EACA,gBAAA;EACA,aAAA;EACA,kBAAA;AAyCN;AAtCI;EACE,eAAA;EACA,aAAA;EACA,gBAAA;EACA,cAAA;AAwCN;AApCE;EACE,WAAA;EACA,eAAA;EACA,YAAA;EACA,aAAA;EACA,kBAAA;EACA,gsBAAA;AAsCJ","sourcesContent":["html {\n  font-size: 14px;\n\n  @media (min-width: 768px) {\n    font-size: 16px;\n  }\n}\n\n.nav-link {\n  padding: 0;\n}\n\n.nav-item a {\n  padding: 0 .5rem;\n}\n\na.navbar-brand {\n  white-space: normal;\n  text-align: center;\n  word-break: break-all;\n}\n\n.box-shadow {\n  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);\n}\n\n.error {\n  color: red;\n  font-weight: bold;\n}\n\n.my-pilet {\n  color: red;\n}\n\n$tile-height: 70px;\n$tile-width: 70px;\n$tile-gap: 10px;\n\n.tiles {\n  flex: 1;\n  position: relative;\n  display: grid;\n  grid-template-columns: repeat(auto-fit, 70px);\n  grid-template-rows: repeat(auto-fit, 70px);\n  grid-gap: 10px;\n  overflow: visible;\n\n  .tile {\n    display: flex;\n    position: relative;\n\n    @for $i from 1 through 8 {\n      &.cols-#{$i} {\n        grid-column: span $i;\n        width: $i * $tile-width + ($i - 1) * $tile-gap;\n      }\n\n      &.rows-#{$i} {\n        grid-row: span $i;\n        height: $i * $tile-width + ($i - 1) * $tile-gap;\n      }\n    }\n\n    &:hover {\n      outline: rgba(29, 29, 29, 0.1) solid 4px;\n    }\n\n    .teaser {\n      font-size: 1.2em;\n      padding: 1em;\n      background: #f8f9fa;\n    }\n  }\n}\n\n.notifications {\n  position: fixed;\n  display: flex;\n  align-items: flex-end;\n  flex-direction: column;\n  right: 2em;\n  bottom: 2em;\n}\n\n.notification-toast {\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  text-align: left;\n  padding: 0.8em;\n  background-color: #fff;\n  max-width: 500px;\n  position: relative;\n  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.2);\n\n  &+& {\n    margin-top: 1em;\n  }\n\n  &.success:before {\n    background-color: #2BDE3F;\n  }\n\n  &.error:before {\n    background-color: #e7431a;\n  }\n\n  &.info:before {\n    background-color: #1D72F3;\n  }\n\n  &.warning:before {\n    background-color: #FFC007;\n  }\n\n  &:before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 2px;\n  }\n\n  .notification-toast-details {\n    flex: 1;\n\n    .notification-toast-title {\n      color: #3e3e3e;\n      font-weight: 700;\n      margin-top: 0;\n      margin-bottom: 8px;\n    }\n\n    .notification-toast-description {\n      font-size: 14px;\n      margin-top: 0;\n      margin-bottom: 0;\n      color: #878787;\n    }\n  }\n\n  .notification-toast-close {\n    width: 14px;\n    cursor: pointer;\n    height: 14px;\n    fill: #878787;\n    margin-left: 1.2em;\n    background: url('data:image/svg+xml;utf8,<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 15.642 15.642\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" enable-background=\"new 0 0 15.642 15.642\"><path fill-rule=\"evenodd\" d=\"M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z\"></path></svg>') no-repeat center center;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -26583,7 +26583,7 @@ function installPiralDebug(options) {
             dependencies: "react,react-dom,react-router,react-router-dom,history,tslib,path-to-regexp,@libre/atom,@dbeining/react-atom",
         },
         build: {
-            date: "2021-12-29T08:36:28.083Z",
+            date: "2022-01-17T02:39:09.804Z",
             cli: "0.14.5",
             compat: "0.14",
         },
@@ -66671,6 +66671,61 @@ if (!global.fetch) {
 
 /***/ }),
 
+/***/ "./src/DashboardContainer.tsx":
+/*!************************************!*\
+  !*** ./src/DashboardContainer.tsx ***!
+  \************************************/
+/*! exports provided: DashboardContainer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardContainer", function() { return DashboardContainer; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var defaultTiles = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "tile rows-2 cols-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "teaser"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+  href: "https://piral.io/"
+}, "Piral"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("br", null), "for next generation portals (Piral Documentation)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "tile rows-2 cols-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "teaser"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+  href: "https://www.typescriptlang.org/"
+}, "TypeScript"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("br", null), "for writing scalable web apps (TypeScript documentation)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "tile rows-2 cols-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "teaser"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+  href: "https://reactjs.org/"
+}, "React"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("br", null), "for building components")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "tile rows-2 cols-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "teaser"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+  href: "http://getbootstrap.com/"
+}, "Bootstrap"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("br", null), "for layout and styling")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "tile rows-2 cols-2"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  className: "teaser"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+  href: "https://sass-lang.com"
+}, "Sass"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("br", null), "for crafting custom styles")));
+var DashboardContainer = function DashboardContainer(_ref) {
+  var children = _ref.children;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", {
+    className: "my-pilet"
+  }, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to your new microfrontend app shell, built with:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "tiles"
+  }, defaultTiles, children));
+};
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -66686,10 +66741,15 @@ __webpack_require__.r(__webpack_exports__);
 
  //to render everything
 
- // change to your feed URL here (either using feed.piral.cloud or your own service)
+ //api-key: ac36fb1ce817971c07fec3eb8d5bdcf7c8d1606d7d8dd87e8c080504f2187c28 - https://feed.piral.cloud/api/v1/pilet/tutorialss
+//api-key: 1873ae11f44b8b0c6e525c7d6636bb8ba295af26776a74286a6cfb2d84483b91 - https://feed.piral.cloud/api/v1/pilet/tut0rials
+//pilet publish --fresh --url https://feed.piral.cloud/api/v1/pilet/tut0rials --api-key 1873ae11f44b8b0c6e525c7d6636bb8ba295af26776a74286a6cfb2d84483b91
+// change to your feed URL here (either using feed.piral.cloud or your own service)
 
 var feedUrl = 'https://feed.piral.cloud/api/v1/pilet/tut0rials';
-Object(piral__WEBPACK_IMPORTED_MODULE_1__["renderInstance"])({
+;
+
+var _renderInstance = Object(piral__WEBPACK_IMPORTED_MODULE_1__["renderInstance"])({
   layout: _layout__WEBPACK_IMPORTED_MODULE_2__["layout"],
   errors: _layout__WEBPACK_IMPORTED_MODULE_2__["errors"],
   requestPilets: function requestPilets() {
@@ -66699,7 +66759,12 @@ Object(piral__WEBPACK_IMPORTED_MODULE_1__["renderInstance"])({
       return res.items;
     });
   }
-});
+}),
+    root = _renderInstance.root;
+
+setTimeout(function () {
+  alert(root.foo());
+}, 2000);
 
 /***/ }),
 
@@ -66718,6 +66783,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var piral__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! piral */ "./node_modules/piral/esm/index.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _DashboardContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DashboardContainer */ "./src/DashboardContainer.tsx");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -66729,6 +66795,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -66792,30 +66859,25 @@ var layout = {
   ErrorInfo: function ErrorInfo(props) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Error"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](piral__WEBPACK_IMPORTED_MODULE_1__["SwitchErrorInfo"], Object.assign({}, props)));
   },
-  DashboardContainer: function DashboardContainer(_ref2) {
-    var children = _ref2.children;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Hello, world!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Welcome to your new microfrontend app shell, built with:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-      className: "tiles"
-    }, defaultTiles, children));
-  },
-  DashboardTile: function DashboardTile(_ref3) {
-    var columns = _ref3.columns,
-        rows = _ref3.rows,
-        children = _ref3.children;
+  DashboardContainer: _DashboardContainer__WEBPACK_IMPORTED_MODULE_3__["DashboardContainer"],
+  DashboardTile: function DashboardTile(_ref2) {
+    var columns = _ref2.columns,
+        rows = _ref2.rows,
+        children = _ref2.children;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "tile cols-".concat(columns, " rows-").concat(rows)
     }, children);
   },
-  Layout: function Layout(_ref4) {
-    var children = _ref4.children;
+  Layout: function Layout(_ref3) {
+    var children = _ref3.children;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](piral__WEBPACK_IMPORTED_MODULE_1__["Notifications"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](piral__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
       type: "general"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "container"
     }, children));
   },
-  MenuContainer: function MenuContainer(_ref5) {
-    var children = _ref5.children;
+  MenuContainer: function MenuContainer(_ref4) {
+    var children = _ref4.children;
 
     var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__["useState"](true),
         _React$useState2 = _slicedToArray(_React$useState, 2),
@@ -66846,16 +66908,16 @@ var layout = {
     }, children, defaultMenuItems)))));
   },
   MenuItem: MenuItem,
-  NotificationsHost: function NotificationsHost(_ref6) {
-    var children = _ref6.children;
+  NotificationsHost: function NotificationsHost(_ref5) {
+    var children = _ref5.children;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "notifications"
     }, children);
   },
-  NotificationsToast: function NotificationsToast(_ref7) {
-    var options = _ref7.options,
-        onClose = _ref7.onClose,
-        children = _ref7.children;
+  NotificationsToast: function NotificationsToast(_ref6) {
+    var options = _ref6.options,
+        onClose = _ref6.onClose,
+        children = _ref6.children;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "notification-toast ".concat(options.type)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
@@ -66973,8 +67035,8 @@ module.exports = content.locals || {};
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! webpack-hot-middleware/client?path=http://localhost:62123/__webpack_hmr&reload=true */"./node_modules/webpack-hot-middleware/client.js?path=http://localhost:62123/__webpack_hmr&reload=true");
-__webpack_require__(/*! C:\Users\Oscar\Desktop\Python\my-app\src\style.scss */"./src/style.scss");
-module.exports = __webpack_require__(/*! C:\Users\Oscar\Desktop\Python\my-app\src\index.tsx */"./src/index.tsx");
+__webpack_require__(/*! C:\Users\Oscar\Desktop\Python\Piral\my-app\src\style.scss */"./src/style.scss");
+module.exports = __webpack_require__(/*! C:\Users\Oscar\Desktop\Python\Piral\my-app\src\index.tsx */"./src/index.tsx");
 
 
 /***/ })
