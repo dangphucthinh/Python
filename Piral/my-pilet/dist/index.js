@@ -13,8 +13,52 @@ System.register(["react","react-router-dom"], function(__WEBPACK_DYNAMIC_EXPORT_
 		execute: function() {
 			__WEBPACK_DYNAMIC_EXPORT__(
 /******/ (function(modules) { // webpackBootstrap
+/******/ 	// install a JSONP callback for chunk loading
+/******/ 	function webpackJsonpCallback(data) {
+/******/ 		var chunkIds = data[0];
+/******/ 		var moreModules = data[1];
+/******/
+/******/
+/******/ 		// add "moreModules" to the modules object,
+/******/ 		// then flag all "chunkIds" as loaded and fire callback
+/******/ 		var moduleId, chunkId, i = 0, resolves = [];
+/******/ 		for(;i < chunkIds.length; i++) {
+/******/ 			chunkId = chunkIds[i];
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 				resolves.push(installedChunks[chunkId][0]);
+/******/ 			}
+/******/ 			installedChunks[chunkId] = 0;
+/******/ 		}
+/******/ 		for(moduleId in moreModules) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+/******/ 				modules[moduleId] = moreModules[moduleId];
+/******/ 			}
+/******/ 		}
+/******/ 		if(parentJsonpFunction) parentJsonpFunction(data);
+/******/
+/******/ 		while(resolves.length) {
+/******/ 			resolves.shift()();
+/******/ 		}
+/******/
+/******/ 	};
+/******/
+/******/
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
+/******/
+/******/ 	// object to store loaded and loading chunks
+/******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 	// Promise = chunk loading, 0 = chunk loaded
+/******/ 	var installedChunks = {
+/******/ 		"index": 0
+/******/ 	};
+/******/
+/******/
+/******/
+/******/ 	// script path function
+/******/ 	function jsonpScriptSrc(chunkId) {
+/******/ 		return __webpack_require__.p + "" + {"0":"dd19336e","1":"8de4f580"}[chunkId] + ".js"
+/******/ 	}
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -40,6 +84,67 @@ System.register(["react","react-router-dom"], function(__WEBPACK_DYNAMIC_EXPORT_
 /******/ 		return module.exports;
 /******/ 	}
 /******/
+/******/ 	// This file contains only the entry chunk.
+/******/ 	// The chunk loading function for additional chunks
+/******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
+/******/ 		var promises = [];
+/******/
+/******/
+/******/ 		// JSONP chunk loading for javascript
+/******/
+/******/ 		var installedChunkData = installedChunks[chunkId];
+/******/ 		if(installedChunkData !== 0) { // 0 means "already installed".
+/******/
+/******/ 			// a Promise means "currently loading".
+/******/ 			if(installedChunkData) {
+/******/ 				promises.push(installedChunkData[2]);
+/******/ 			} else {
+/******/ 				// setup Promise in chunk cache
+/******/ 				var promise = new Promise(function(resolve, reject) {
+/******/ 					installedChunkData = installedChunks[chunkId] = [resolve, reject];
+/******/ 				});
+/******/ 				promises.push(installedChunkData[2] = promise);
+/******/
+/******/ 				// start chunk loading
+/******/ 				var script = document.createElement('script');
+/******/ 				var onScriptComplete;
+/******/
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.src = jsonpScriptSrc(chunkId);
+/******/
+/******/ 				// create error before stack unwound to get useful stacktrace later
+/******/ 				var error = new Error();
+/******/ 				onScriptComplete = function (event) {
+/******/ 					// avoid mem leaks in IE.
+/******/ 					script.onerror = script.onload = null;
+/******/ 					clearTimeout(timeout);
+/******/ 					var chunk = installedChunks[chunkId];
+/******/ 					if(chunk !== 0) {
+/******/ 						if(chunk) {
+/******/ 							var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 							var realSrc = event && event.target && event.target.src;
+/******/ 							error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 							error.name = 'ChunkLoadError';
+/******/ 							error.type = errorType;
+/******/ 							error.request = realSrc;
+/******/ 							chunk[1](error);
+/******/ 						}
+/******/ 						installedChunks[chunkId] = undefined;
+/******/ 					}
+/******/ 				};
+/******/ 				var timeout = setTimeout(function(){
+/******/ 					onScriptComplete({ type: 'timeout', target: script });
+/******/ 				}, 120000);
+/******/ 				script.onerror = script.onload = onScriptComplete;
+/******/ 				document.head.appendChild(script);
+/******/ 			}
+/******/ 		}
+/******/ 		return Promise.all(promises);
+/******/ 	};
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
@@ -93,6 +198,16 @@ System.register(["react","react-router-dom"], function(__WEBPACK_DYNAMIC_EXPORT_
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "./";
 /******/
+/******/ 	// on error function for async loading
+/******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
+/******/
+/******/ 	var jsonpArray = window["wp4Chunkpr_mypilet"] = window["wp4Chunkpr_mypilet"] || [];
+/******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+/******/ 	jsonpArray.push = webpackJsonpCallback;
+/******/ 	jsonpArray = jsonpArray.slice();
+/******/ 	for(var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
+/******/ 	var parentJsonpFunction = oldJsonpFunction;
+/******/
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -126,54 +241,6 @@ __webpack_require__.p = __bundleUrl__;
 
 /***/ }),
 
-/***/ "./src/MyPageMenu.tsx":
-/*!****************************!*\
-  !*** ./src/MyPageMenu.tsx ***!
-  \****************************/
-/*! exports provided: MyPageMenu */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyPageMenu", function() { return MyPageMenu; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
-
-
-var MyPageMenu = function MyPageMenu() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/my-page"
-  }, "My Page");
-};
-
-/***/ }),
-
-/***/ "./src/Page.tsx":
-/*!**********************!*\
-  !*** ./src/Page.tsx ***!
-  \**********************/
-/*! exports provided: MyPage */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyPage", function() { return MyPage; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-var MyPage = function MyPage(_ref) {
-  var data = _ref.data;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Posts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("ul", null, data.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("li", {
-      key: item.id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("b", null, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, item.body));
-  })));
-};
-
-/***/ }),
-
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -188,31 +255,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Page */ "./src/Page.tsx");
-/* harmony import */ var _MyPageMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MyPageMenu */ "./src/MyPageMenu.tsx");
 
 
-
-
-var apiUrl = 'https://jsonplaceholder.typicode.com/posts';
-
-var MyExtension = function MyExtension(_ref) {
-  var params = _ref.params;
-
-  //Check passed in items
-  if (typeof params.id != 'string') {
-    return null;
-  }
-
-  if (!Array.isArray(params.items) || params.items.some(function (m) {
-    return typeof m !== 'number';
-  })) {
-    return null;
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "This is my first extenson!"));
-};
-
+var MyPage = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["lazy"](function () {
+  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./Page */ "./src/Page.tsx"));
+});
+var FooExtension = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["lazy"](function () {
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.t.bind(null, /*! ./FooExtension */ "./src/FooExtension.tsx", 7));
+});
+var apiUrl = "https://jsonplaceholder.typicode.com/posts";
 function setup(app) {
   app.showNotification("Hello from Piral!", {
     autoClose: 2000
@@ -222,35 +273,61 @@ function setup(app) {
       href: "https://docs.piral.io",
       target: "_blank"
     }, "Documentation");
-  }); //api-key: 1873ae11f44b8b0c6e525c7d6636bb8ba295af26776a74286a6cfb2d84483b91
-
+  });
   app.registerTile("first-title", function () {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-      to: "/sample"
+      to: "/my-page"
     }, "Welcome to my fist sample!");
   }, {
     initialColumns: 2,
-    initialRows: 1
+    initialRows: 2
   });
-  app.registerTile(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("button", {
-      onClick: function onClick() {
-        return app.unregisterTile("first-title");
-      }
-    }, "Remove first title");
+  app.registerExtension("foo", function () {
+    return FooExtension;
+  });
+  app.registerExtension("bar", function () {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "Bar extension");
   });
   var connect = app.createConnector(function () {
-    return fetch(apiUrl).then(function (res) {
-      return res.json();
+    return new Promise(function (resolve) {
+      return setTimeout(function () {
+        return resolve([{
+          id: 5,
+          title: "haha"
+        }]);
+      }, 1000);
     });
   });
-  app.registerMenu(_MyPageMenu__WEBPACK_IMPORTED_MODULE_3__["MyPageMenu"]);
-  app.registerPage("/my-page", connect(_Page__WEBPACK_IMPORTED_MODULE_2__["MyPage"]));
+
+  var Foo = function Foo() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](app.Extension, {
+      name: "Foo"
+    });
+  };
+
+  app.registerPage("/my-page", connect(function (_ref) {
+    var data = _ref.data;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](MyPage, {
+      data: data,
+      Foo: Foo
+    });
+  }));
   app.registerPage("/example", function () {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Example page"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, "Below we list the extensions registered for \"extension-slot-name\"."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](app.Extension, {
       name: "extenion-slot-name"
     }));
   });
+
+  if (true) {
+    app.registerTile(function () {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](app.Extension, {
+        name: "bar"
+      });
+    }, {
+      initialColumns: 8,
+      initialRows: 8
+    });
+  }
 }
 
 /***/ }),
@@ -262,7 +339,7 @@ function setup(app) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Oscar\Desktop\Python\my-pilet\node_modules\piral-cli-webpack\lib\set-path */"./node_modules/piral-cli-webpack/lib/set-path.js");
+__webpack_require__(/*! C:\Users\Oscar\Desktop\Python\Piral\my-pilet\node_modules\piral-cli-webpack\lib\set-path */"./node_modules/piral-cli-webpack/lib/set-path.js");
 module.exports = __webpack_require__(/*! ./src\index.tsx */"./src/index.tsx");
 
 

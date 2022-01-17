@@ -1,26 +1,37 @@
+import { PageComponentProps } from 'my-app';
 import * as React from 'react';
 
-export interface Post {
-    id: number;
-    userId: number;
-    title: string;
-    body: string;
+// const Page: React.FC<PageComponentProps & {data: any}> = ({ data, piral }) => (
+//   <div>
+//     <h1>My page</h1>
+//     <p>Example page</p>
+//     <piral.Extension name="foo" />
+//     <ul>
+//       {
+//         data.map(post => (
+//           <li key={data.id}> {data.title} </li>
+//         ))
+//       }
+//     </ul>
+//   </div>
+// );
+
+export interface PageProps {
+  data: any;
+  Foo: React.ComponentType;
 }
 
-export interface MyPageProps {
-  data: Array<Post>;
-}
-
-export const MyPage: React.FC<MyPageProps> = ({ data }) => (
+const Page: React.FC<PageProps> = ({ data, Foo }) => (
   <div>
-    <h1>Posts</h1>
+    <h1> My page </h1>
+    <p> This is just some example text...</p>
+    <Foo />
     <ul>
-      {data.map(item => (
-        <li key={item.id}>
-          <b>{item.title}</b>
-          <p>{item.body}</p>
-        </li>
+      {data.map(post => (
+        <li key={post.id}>{post.title}</li>
       ))}
     </ul>
   </div>
 );
+
+export default Page;

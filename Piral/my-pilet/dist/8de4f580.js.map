@@ -1,0 +1,1 @@
+{"version":3,"file":"8de4f580.js","sources":["webpack:///./src/FooExtension.tsx"],"sourcesContent":["import * as React from \"react\";\r\n\r\nconst FooExtension: React.FC = () => (\r\n    <h1>Foo extension</h1>\r\n);\r\n\r\nexport default FooExtension;"],"mappings":";;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AACA;AACA;AAAA;AAAA;AACA;AAGA;;;;A","sourceRoot":""}

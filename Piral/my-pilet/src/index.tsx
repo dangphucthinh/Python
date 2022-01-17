@@ -1,8 +1,7 @@
 import * as React from "react";
 import { ExtensionComponentProps, PiletApi } from "my-app";
 import { Link } from "react-router-dom";
-import { Post, MyPage } from "./Page";
-import { MyPageMenu } from "./MyPageMenu";
+import { off } from "process";
 
 //Expected props
 interface MyExtensionParams {
@@ -10,26 +9,10 @@ interface MyExtensionParams {
   items: Array<number>;
 }
 
-const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+const MyPage = React.lazy(() => import("./Page"));
+const FooExtension = React.lazy(() => import("./FooExtension"));
 
-const MyExtension: React.FC<ExtensionComponentProps<MyExtensionParams>> = ({ params }) => {
-  //Check passed in items
-  if (typeof params.id != 'string') {
-    return null
-  }
-
-  if (!Array.isArray(params.items) || params.items.some(m => typeof m !== 'number')) {
-    return null;
-  }
-
-  return (
-    <>
-      <h1>
-        This is my first extenson!
-      </h1>
-    </>
-  );
-};
+const apiUrl = "https://jsonplaceholder.typicode.com/posts";
 
 export function setup(app: PiletApi) {
   app.showNotification("Hello from Piral!", {
@@ -40,30 +23,45 @@ export function setup(app: PiletApi) {
       Documentation
     </a>
   ));
-  //api-key: 1873ae11f44b8b0c6e525c7d6636bb8ba295af26776a74286a6cfb2d84483b91
   app.registerTile(
     "first-title",
-    () => <Link to="/sample">Welcome to my fist sample!</Link>,
+    () => <Link to="/my-page">Welcome to my fist sample!</Link>,
     {
       initialColumns: 2,
-      initialRows: 1,
+      initialRows: 2,
     }
   );
-  app.registerTile(() => (
-    <button onClick={() => app.unregisterTile("first-title")}>
-      Remove first title
-    </button>
-  ));
-  const connect = app.createConnector<Array<Post>>(() => fetch(apiUrl).then(res => res.json()));
-  app.registerMenu(MyPageMenu)
-  app.registerPage("/my-page", connect(MyPage));
+
+  app.registerExtension("foo", () => FooExtension);
+
+  app.registerExtension("bar", () => <div>Bar extension</div>);
+
+  const connect = app.createConnector(
+    () =>
+      new Promise((resolve) =>
+        setTimeout(() => resolve([{ id: 5, title: "haha" }]), 1000)
+      )
+  );
+  const Foo = () => <app.Extension name="Foo"/>
+  app.registerPage("/my-page", connect(({data}) => {
+    return <MyPage data={data} Foo={Foo}></MyPage>
+  }));
   app.registerPage("/example", () => {
     return (
       <>
         <h1>Example page</h1>
-        <p>Below we list the extensions registered for "extension-slot-name".</p>
+        <p>
+          Below we list the extensions registered for "extension-slot-name".
+        </p>
         <app.Extension name="extenion-slot-name" />
       </>
-    )
+    );
   });
+
+  if(process.env.NODE_ENV == "development") {
+    app.registerTile(() => <app.Extension name="bar" />, {
+      initialColumns: 8,
+      initialRows: 8
+    })
+  }
 }
